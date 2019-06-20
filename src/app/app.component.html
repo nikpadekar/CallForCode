@@ -1,21 +1,103 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="h-screen w-screen flex flex-wrap bg-blue-lightest">
+		
+  <div class="w-full flex flex-wrap shadow-lg bg-white rounded max-w-6xl m-auto">
+    
+    <!-- HEADER -->
+    <div class="header-container w-full sticky flex flex-wrap items-center justify-center text-center rounded-t p-4">
+      <div class="w-16 h-16">
+      <img src="../assets/img/BotIcon.svg" class="rounded-full shadow">
+    </div>
+     <h3 class="w-full text-grey-dark font-normal capitalize py-2">
+       How can we help you?
+     </h3>
+     <p class="w-full text-grey-dark font-light max-w-xs m-auto leading-tight">
+       Please keep your questions concise so we can give you the best advice!
+     </p>
+  </div>
+  
+  <!-- CONVERSATIONS -->
+  <div class="overflow-hidden">
+    <p class="w-full text-sm text-grey-dark mb-2 px-6">
+      Conversation history...
+    </p>
+    <div class="flex flex-wrap w-full shadow-inner p-6">
+      <div class="w-full conversation-list px-4">
+
+        <!-- USER -->
+        <div class="w-full flex flex-wrap items-center message user my-1">
+          <div class="text relative rounded bg-grey-lighter shadow hover:shadow-md">
+            <p class="self-center">
+              I would like to check my balance
+            </p>
+            <i class="fas fa-triangle"></i>
+          </div>
+        </div>
+
+        <!-- BOT -->
+        <div class="w-full message bot my-1">
+          <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+            <p class="w-full spinner self-center text-grey">
+              <span class="bounce3"></span>
+              <span class="bounce2"></span>
+              <span class="bounce1"></span>
+            </p>
+            <i class="fas fa-triangle"></i>
+          </div>
+        </div>
+
+        <!-- BOT -->
+        <div class="w-full message bot my-1">
+          <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+            <p class="self-center">
+              Sure. You will need to log in first. May I have your email associated with your account?
+            </p>
+            <i class="fas fa-triangle"></i>
+          </div>
+        </div>
+
+        <!-- USER -->
+        <div class="w-full flex flex-wrap items-center message user my-1">
+          <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+            <p class="self-center">
+              ok. here you go: linda.walker@cox.net
+            </p>
+            <i class="fas fa-triangle"></i>
+          </div>
+        </div>
+        
+        <!-- BOT -->
+        <div class="w-full message bot my-1">
+          <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+            <p class="self-center">
+              Thank you! Please also provide your password in the space below? (btw we do not save your password)
+            </p>
+            <i class="fas fa-triangle"></i>
+          </div>
+        </div>
+        
+        <!-- USER -->
+        <div class="w-full flex flex-wrap items-center message user my-1">
+          <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+            <p class="self-center">
+              ***************
+            </p>
+            <i class="fas fa-triangle"></i>
+          </div>
+        </div>
+       </div>
+     </div>
+   </div>
+   
+  <!--    INPUT FIELD    -->
+  <div class="container rounded-b bg-grey-lighter border-l-4 border-blue py-8 px-6">
+    <input class="shadow appearance-none border rounded w-full text-grey-darker leading-tight focus:outline-none focus:shadow-outline p-3" id="username" type="text" placeholder="Ask something ...">
+  </div>
+  
+  <!--	PASSWORD FIELD	-->
+  <div class="hidden container rounded-b bg-grey-lighter border-l-4 border-blue py-8 px-6">
+    <input class="shadow appearance-none border rounded w-full text-grey-darker leading-tight focus:outline-none focus:shadow-outline p-3" id="password" type="password" placeholder="************">
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+ </div>
 
 <router-outlet></router-outlet>
