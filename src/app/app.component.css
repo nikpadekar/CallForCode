@@ -13,10 +13,12 @@ body {
 }
 
 .conversation-list {
-    max-height: 25rem;
+    max-height: 18rem;
    overflow-y: auto;
 }
-
+.inline-margin{
+    margin-inline-end: 10px
+}
 .message {
     max-width: 85%;
    margin-bottom: 1.75rem;

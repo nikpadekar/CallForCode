@@ -1,10 +1,10 @@
-<div class="h-screen w-screen flex flex-wrap bg-blue-lightest">
+<div class="h-screen w-full flex flex-wrap bg-blue-lightest">
 		
-  <div class="w-full flex flex-wrap shadow-lg bg-white rounded max-w-6xl m-auto">
+  <div class="w-full flex flex-wrap shadow-lg bg-white rounded max-w-5xl mt-8 mb-2 mx-auto">
     
     <!-- HEADER -->
     <div class="header-container w-full sticky flex flex-wrap items-center justify-center text-center rounded-t p-4">
-      <div class="w-16 h-16">
+      <div class="w-16 h-16 -mt-12">
       <img src="../assets/img/BotIcon.svg" class="rounded-full shadow">
     </div>
      <h3 class="w-full text-grey-dark font-normal capitalize py-2">
@@ -17,9 +17,6 @@
   
   <!-- CONVERSATIONS -->
   <div class="overflow-hidden">
-    <p class="w-full text-sm text-grey-dark mb-2 px-6">
-      Conversation history...
-    </p>
     <div class="flex flex-wrap w-full shadow-inner p-6">
       <div class="w-full conversation-list px-4">
 
@@ -88,9 +85,15 @@
      </div>
    </div>
    
+   
   <!--    INPUT FIELD    -->
-  <div class="container rounded-b bg-grey-lighter border-l-4 border-blue py-8 px-6">
-    <input class="shadow appearance-none border rounded w-full text-grey-darker leading-tight focus:outline-none focus:shadow-outline p-3" id="username" type="text" placeholder="Ask something ...">
+  <div class="shadow-inner sticky flex flex-wrap w-full footer-container rounded-b py-3 px-6" style="min-height: 3rem">
+      <div class="flex w-full items-center border-b border-b-2 border-teal-500 pb-2">
+          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 inline-margin" type="text" placeholder="Type Here" aria-label="Full name">
+          <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-5 rounded" type="button">
+            Send
+          </button>
+      </div>
   </div>
   
   <!--	PASSWORD FIELD	-->
