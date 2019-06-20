@@ -3,3 +3,23 @@ body{
 
     background: aliceblue;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cacaca9c; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c1c1c19c; 
+  }

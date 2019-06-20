@@ -57,17 +57,17 @@ svg.fa-triangle {
 }
 
 /* BOT STYLE */
-.message.bot {
+.message.user {
     text-align: right;
    float: right;
 }
 
-.message.bot .text {
+.message.user .text {
    background-color: #eff8ff;
    float: right;
 }
 
-.bot svg.fa-triangle {
+.user svg.fa-triangle {
     transform: rotate(30deg);
    color: #eff8ff;
 /*	color: #000;*/
@@ -78,17 +78,17 @@ svg.fa-triangle {
 }
 
 /* USER STYLE */
-.message.user {
+.message.bot {
    text-align: left;
    float: left;
 }
 
-.message.user .text {
+.message.bot .text {
    background-color: #fcebea;
    float: left;
 }
 
-.user svg.fa-triangle {
+.bot svg.fa-triangle {
    transform: rotate(90deg);
    color: #fcebea;
 /*	color: #000;*/
