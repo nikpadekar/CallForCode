@@ -21,7 +21,8 @@ body {
 }
 .message {
     max-width: 85%;
-   margin-bottom: 1.75rem;
+    margin-top: .25rem;
+   margin-bottom: .75rem;
    color: #606f7b;
    filter: dropshadow(0 0 0.75rem rgba(0,0,0,0.6));
    -webkit-animation: slide-in-blurred-bottom 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
@@ -31,6 +32,8 @@ body {
 
 .text {
     position: relative;
+    width: fit-content;
+    min-width: 20%;
 }
 .text p {
     padding: 0.5rem 1rem;
@@ -61,6 +64,7 @@ svg.fa-triangle {
 
 .message.bot .text {
    background-color: #eff8ff;
+   float: right;
 }
 
 .bot svg.fa-triangle {
@@ -81,6 +85,7 @@ svg.fa-triangle {
 
 .message.user .text {
    background-color: #fcebea;
+   float: left;
 }
 
 .user svg.fa-triangle {
