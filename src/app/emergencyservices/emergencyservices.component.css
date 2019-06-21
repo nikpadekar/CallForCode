@@ -1,0 +1,14 @@
+
+.message.feed {
+    text-align: left;
+    max-width: 100%;
+}
+
+.message.feed .text {
+   background-color: #eff8ff;
+}
+.conversation-list {
+    max-height: 24rem;
+}
+
+

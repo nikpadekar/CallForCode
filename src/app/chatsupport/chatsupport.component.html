@@ -1,0 +1,92 @@
+    <!-- CONVERSATIONS -->
+    <div class="overflow-hidden">
+      <div class="flex flex-wrap w-full shadow-inner p-6">
+        <div class="w-full conversation-list px-4">
+
+          <!-- USER -->
+          <div class="w-full message user">
+            <div class="text relative rounded bg-grey-lighter shadow hover:shadow-md">
+              <p class="self-center">
+                message 1
+              </p>
+              <i class="fas fa-triangle"></i>
+            </div>
+          </div>
+
+          <!-- BOT -->
+          <!-- <div class="w-full message bot">
+            <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+              <p class="w-full spinner self-center text-grey">
+                <span class="bounce3"></span>
+                <span class="bounce2"></span>
+                <span class="bounce1"></span>
+              </p>
+              <i class="fas fa-triangle"></i>
+            </div>
+          </div> -->
+
+          <!-- BOT -->
+          <div class="w-full message bot">
+            <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+              <p class="self-center">
+                message 2
+              </p>
+              <i class="fas fa-triangle"></i>
+            </div>
+          </div>
+          <div class="w-full message user">
+            <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+              <p class="self-center">
+                message 3
+              </p>
+              <i class="fas fa-triangle"></i>
+            </div>
+          </div>
+
+          <!-- USER -->
+          <div class="w-full message user">
+            <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+              <p class="self-center">
+                message 4
+              </p>
+              <i class="fas fa-triangle"></i>
+            </div>
+          </div>
+
+          <!-- BOT -->
+          <div class="w-full message bot">
+            <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+              <p class="self-center">
+                message 5
+              </p>
+              <i class="fas fa-triangle"></i>
+            </div>
+          </div>
+
+          <!-- USER -->
+          <div class="w-full message user">
+            <div class="text rounded bg-grey-lighter shadow hover:shadow-md p-2">
+              <p class="self-center">
+                message 6
+              </p>
+              <i class="fas fa-triangle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="border-width: 1px;">
+    <!--    INPUT FIELD    -->
+    <div class="shadow-inner sticky flex flex-wrap w-full footer-container rounded-b pt-5 px-6"
+      style="min-height: 2rem">
+      <div class="flex w-full items-center pb-2">
+        <input #UserMessage
+          class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 inline-margin"
+          type="text" placeholder="Type Here" aria-label="Full name">
+        <button (click)="getWatsonRes(UserMessage)"
+          class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-5 rounded"
+          type="button">
+          Send
+        </button>
+      </div>
+    </div>
